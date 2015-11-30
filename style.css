@@ -4,11 +4,23 @@ Theme URI: http://webmonkeydd.com/lightning-monkey
 Description: A simple, clean, responsive, lightning fast theme with the power of a monkey!
 Author: Myles English
 Author URI: http://webmonkeydd.com
-Version: 1.0
-Tags: green, blue, brown, tan, white, fluid-layout, responsive-layout, light, one-column, two-columns, right-sidebar, custom-header, custom-menu, featured-images
-Text Domain: lightningmonkey
+Version: 1.1.4
+Tags: green, blue, brown, tan, white, fluid-layout, responsive-layout, light, one-column, two-columns, full-width-template, theme-options, right-sidebar, custom-menu, featured-images
+Text Domain: lightning-monkey
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Lightning Monkey WordPress Theme, Copyright (C) 2015, Myles English
+Lightning Monkey is distributed under the terms of the GNU GPL
+
+Twitter Bootstrap, Copyright (c) 2011-2015 Twitter, Inc
+Twitter Bootstrap is licensed under the terms of the MIT License (MIT)
+Source: http://getbootstrap.com/getting-started/#license-faqs
+
+Font Awesome, Copyright 2015 Dave Gandy
+Font Awesome is licensed under the terms of the MIT License (MIT)
+https://fortawesome.github.io/Font-Awesome/license/
+
 */
 /*WordPress Core*/
 .alignnone {
@@ -187,6 +199,19 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
 	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
+.read-more{
+	border: 1px solid #A1DD84;
+	border-radius: 4px;
+	padding: 6px 30px;
+	margin: 20px 0;
+    display: block;
+    max-width: 150px;
+    text-align: center;
+}
+.read-more:hover{
+	border: 1px solid rgb(244, 154, 15);
+	text-decoration: none;
+}
 button, input[type="submit"], #home-cta-button{
 	text-shadow:1px 1px 1px green;
 	font-weight:bold;
@@ -359,6 +384,21 @@ img{
 	height:auto;
 }
 /* Header */
+.no-logo{
+	position: relative;
+    top: 20px;
+    margin-right: 15px;
+    color:rgb(99, 208, 47) !important;
+}
+.no-logo:hover{
+	text-decoration:none !important;
+	color:rgb(244, 154, 15) !important;
+}
+@media screen and (max-width:767px){
+	.no-logo{
+		top:10px;
+	}
+}
 #main-header{
 	padding-top:20px;
 }
